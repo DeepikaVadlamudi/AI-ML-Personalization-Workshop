@@ -34,20 +34,20 @@ This repo contains code to train , test and visualize how a machine learning mod
 On terminal change to the directory where you download the code from Git
 
 **For Mac** 
-     `docker run -p 10000:8888 -v "${PWD}":/home/jovyan/work  jupyter/minimal-notebook:latest`
+     `docker run -p 8888:8888 -v "${PWD}":/home/jovyan/work  jupyter/minimal-notebook:latest`
       or
       `docker build .`
-      `docker run -p 8888:88888 <image id create by build step above>`
+      `docker run -p 8888:8888 <image id create by build step above>`
 **For Windows**
-    `docker run -p 10000:8888 -v "%cd%":/home/jovyan/work  jupyter/minimal-notebook:latest`
+    `docker run -p 8888:8888 -v "%cd%":/home/jovyan/work  jupyter/minimal-notebook:latest`
      or
       `docker build .`
       `docker run -p 8888:88888 <image id create by build step above>`
 
 5. If you did not change port in #4, use the link printed from the docker container and open in a browser.   Somethink like the below will be shown in the terminal if Docker container starts successfully.
 
-    `To access the server, open this link in a browser:`
-        http://127.0.0.1:8888/lab?token=fe2d288dbcfd25dfc4bd8b181825b8c14ea422643fe58c52
+    `To access the server, open the link shown in the console ouptut  in a browser:`
+        http://127.0.0.1:8888/lab?token=<your token>
 
     **Note**:  Change port to 10000 based on Step 4 port used. 
  
