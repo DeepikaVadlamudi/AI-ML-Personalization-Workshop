@@ -48,8 +48,6 @@ On terminal change to the directory where you download the code from Git
 
     `To access the server, open the link shown in the console ouptut  in a browser:`
         http://127.0.0.1:8888/lab?token=<your token>
-
-    **Note**:  Change port to 10000 based on Step 4 port used. 
  
 
 6. In Jupyter notebook:
